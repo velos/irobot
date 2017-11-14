@@ -9,9 +9,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Example local unit test, which will execute on the development machine (host).
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * Acceptance tests for moving multiple robots within a factory.
  */
 public class RobotUnitTest {
 
@@ -22,6 +20,7 @@ public class RobotUnitTest {
 
     @Before
     public void init() {
+        // Initialize these properly once we can obtain IRobot instances.
         robotOne = new RobotProxy(null);
         robotTwo = new RobotProxy(null);
         robotThree = new RobotProxy(null);
